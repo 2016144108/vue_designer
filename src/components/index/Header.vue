@@ -2,9 +2,9 @@
     <div class="header_item">
         <ul>
             <li :style="{width: 1 / 4 * 100+'%',}"><router-link :to="{name: 'photo'}">摄影</router-link></li>
-            <li :style="{width: 1 / 4 * 100+'%',}"><router-link :to="{name: 'index'}">话题</router-link></li>
-            <li :style="{width: 1 / 4 * 100+'%',}"><router-link :to="{name: 'index'}">文章</router-link></li>
-            <li :style="{width: 1 / 4 * 100+'%',}"><router-link :to="{name: 'index'}">资讯</router-link></li>
+            <li :style="{width: 1 / 4 * 100+'%',}"><router-link :to="{name: 'comment'}">话题</router-link></li>
+            <li :style="{width: 1 / 4 * 100+'%',}"><router-link :to="{name: 'airtle'}">文章</router-link></li>
+            <li :style="{width: 1 / 4 * 100+'%',}"><router-link :to="{name: 'activity'}">资讯</router-link></li>
         </ul>
     </div>
 </template>

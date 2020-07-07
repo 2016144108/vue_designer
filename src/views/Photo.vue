@@ -7,7 +7,7 @@
 </template>
 
 <script>
-    import Header from "../components/photo/Header"
+    import Header from "../components/common/Header"
     import Style from "../components/photo/Style"
     import PhotoList from "../components/photo/PhotoList"
 
