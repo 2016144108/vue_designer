@@ -10,7 +10,8 @@
                 <p>{{item.title}}</p>
                 <p>{{item.intro}}</p>
                 <p>{{item.starttime}} ~ {{item.endtime}}</p>
-                <p>{{item.state}}</p>
+                <p @click="join" :class="{go: item.state}" v-if="item.state">进行中</p>
+                <p v-if="!item.state">已结束</p>
                 <div class="imgbox">
                     <img :src="item.logo" alt="">
                 </div>
@@ -28,7 +29,12 @@
                 default: [],
                 required: true,
             }
-        }
+        },
+        methods: {
+            join(){
+                alert("关注成功");
+            },
+        },
     }
 </script>
 
@@ -43,11 +49,12 @@
         margin: 0 auto;
     }
     h1{
-        margin-top: 40px;
-        margin-bottom: 40px;
-        font-size: 24px;
-        font-weight: normal;
+        margin-top: 30px;
+        margin-bottom: 30px;
         color: hotpink;
+        font-size: 28px;
+        font-weight: bold;
+        font-family: "楷体";
     }
     .activity_container{
         width: 1200px;
@@ -61,6 +68,9 @@
         overflow: hidden;
         float: left;
         margin-bottom: 20px;
+    }
+    .activity_box:hover {
+        border: 1px solid hotpink;
     }
     .activity_box .img{
         position: absolute;
@@ -109,11 +119,33 @@
         left: 30px;
         width: 80px;
         text-align: center;
-        height:30px;
-        line-height: 30px;
+        height:26px;
+        line-height: 26px;
+        font-size: 13px;
+        border: 1px solid hotpink;
+        background-color: white;
+        border-radius: 3px;
+        color: hotpink;
+        cursor: pointer;
+    }
+    .activity_box p:nth-of-type(5).go{
+        position: absolute;
+        top: 410px;
+        left: 30px;
+        width: 80px;
+        text-align: center;
+        height:26px;
+        line-height: 26px;
+        font-size: 13px;
+        border: 1px solid hotpink;
         background-color: hotpink;
         border-radius: 3px;
         color: white;
+        cursor: pointer;
+        transition: all 0.2s linear;
+    }
+    .activity_box p:nth-of-type(5).go:hover{
+        background-color: rgba(255, 105, 180, 0.58);
     }
     .activity_box .imgbox{
         position: absolute;

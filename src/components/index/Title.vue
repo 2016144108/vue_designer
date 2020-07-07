@@ -73,11 +73,14 @@
         width: 100%;
     }
     .title_box .content{
-        width: 588px;
+        width: 568px;
         text-align: left;
         position: absolute;
         top: 210px;
         left: 0;
+        color: grey;
+        padding: 0 10px;
+        font-size: 14px;
     }
     .title_box .content:hover{
         color: hotpink;

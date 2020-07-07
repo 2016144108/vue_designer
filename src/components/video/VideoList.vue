@@ -34,11 +34,12 @@
         margin: 0 auto;
     }
     h1{
-        margin-top: 40px;
-        margin-bottom: 40px;
-        font-size: 24px;
-        font-weight: normal;
+        margin-top: 30px;
+        margin-bottom: 30px;
         color: hotpink;
+        font-size: 28px;
+        font-weight: bold;
+        font-family: "楷体";
     }
     .video_container{
         width: 1200px;
@@ -51,14 +52,18 @@
         float: left;
         margin-right: 10px;
         margin-bottom: 10px;
+        cursor: pointer;
     }
     .video_container .video_box video{
         width: 100%;
     }
     .video_container .video_box p{
-        width: 100%;
+        width: 564px;
         text-align: left;
         margin-top: 5px;
+        font-size: 14px;
+        padding: 0 10px;
+        color: grey;
     }
     .video_container .video_box p:hover{
         color: hotpink;

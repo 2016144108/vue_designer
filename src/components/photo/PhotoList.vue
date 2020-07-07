@@ -74,6 +74,7 @@
         position: absolute;
         top: 410px;
         left: 0;
+        color: grey;
     }
     .photo_box .content{
         width: 280px;
@@ -81,6 +82,7 @@
         position: absolute;
         top: 440px;
         left: 0;
+        color: grey;
     }
     .photo_box span:hover{
         color: hotpink;

@@ -90,6 +90,10 @@
         color: black;
         text-decoration: none;
     }
+    .header_box .header_list ul li a:hover{
+        cursor: pointer;
+        color: hotpink;
+    }
     .header_box .header_text{
         height: 70px;
         width: 210px;
@@ -102,6 +106,11 @@
         height: 70px;
         line-height: 70px;
         cursor: pointer;
+        font-size: 13px;
+        transition: all 0.2s linear;
+    }
+    .header_box .header_text span:hover{
+        color: hotpink;
     }
     .header_box .header_text span:nth-of-type(1){
         margin-right: 50px;
