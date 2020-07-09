@@ -1,6 +1,7 @@
 <template>
     <div style="width: 1503px;margin: 0 auto" class="index_item">
         <Banner :banners="banners"/>
+        <Item/>
         <Header/>
         <Photo :photos="photos"/>
         <Show :shows="shows"/>
@@ -14,6 +15,7 @@
     import Photo from '../components/index/Photo'
     import Show from '../components/index/Show'
     import Title from '../components/index/Title'
+    import Item from '../components/index/Item'
 
     export default {
         name: "Index",
@@ -23,6 +25,7 @@
             Photo,
             Show,
             Title,
+            Item,
         },
         data(){
             return{

@@ -12,11 +12,6 @@ const router_config={
             component: ()=>import("../views/Photo"),
         },
         {
-            path: "/Index",
-            name: "index",
-            component: ()=>import("../views/Index"),
-        },
-        {
             path: "/Video",
             name: "video",
             component: ()=>import("../views/Video"),
@@ -35,6 +30,16 @@ const router_config={
             path: "/Activity",
             name: "activity",
             component: ()=>import("../views/Activity"),
+        },
+        {
+            path: "/Login",
+            name: "login",
+            component: ()=>import("../views/Login"),
+        },
+        {
+            path: "/Register",
+            name: "register",
+            component: ()=>import("../views/Register"),
         },
     ]
 }

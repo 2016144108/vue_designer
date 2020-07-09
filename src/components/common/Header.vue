@@ -2,7 +2,7 @@
     <div class="header_item">
         <div class="header_box">
             <div class="logo">
-                <h1>汉服荟</h1>
+                <router-link :to="{name:'index'}"><h1>汉服荟</h1></router-link>
             </div>
             <div class="header_list">
                 <ul>
@@ -16,16 +16,36 @@
             </div>
             <div class="header_text">
                 <span>APP下载</span>
-                <span style="margin-right: 5px">登录</span>
-                <span>注册</span>
+                <template v-if="data">
+                    <span style="margin-right: 5px">{{data.loginId}}</span>
+                    <span @click="handlerlogout">注销</span>
+                </template>
+                <template v-else>
+                    <span style="margin-right: 5px"><router-link :to="{name: 'login'}">登录</router-link></span>
+                    <span><router-link :to="{name: 'register'}">注册</router-link></span>
+                </template>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+    import {mapState} from 'vuex'
+
     export default {
-        name: "Header"
+        name: "Header",
+        computed: {
+            ...mapState('loginUser',['data','isLoading']),
+        },
+        methods: {
+            handlerlogout(){
+                alert(this.data.loginId+"退出");
+                this.$store.dispatch("loginUser/logout");
+                this.$router.push({
+                    name: 'login',
+                });
+            }
+        }
     }
 </script>
 
@@ -109,7 +129,11 @@
         font-size: 13px;
         transition: all 0.2s linear;
     }
-    .header_box .header_text span:hover{
+    .header_box .header_text span a{
+        text-decoration: none;
+        color: black;
+    }
+    .header_box header_text span:hover{
         color: hotpink;
     }
     .header_box .header_text span:nth-of-type(1){
