@@ -7,8 +7,7 @@
                     <img :src="item.imgurl" alt="">
                 </div>
                 <span>最佳搭配</span>
-                <span class="commit">关注：{{item.commit}}</span>
-                <span class="look">浏览：{{item.look}}</span>
+                <span class="commit">关注：{{item.commit}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  浏览：{{item.look}}</span>
             </div>
         </div>
     </div>
@@ -34,8 +33,7 @@
         list-style: none;
     }
     .show_item{
-        width: 1503px;
-        height: 450px;
+        width: 100%;
         margin: 0 auto;
     }
     h1{
@@ -43,17 +41,23 @@
         font-size: 28px;
         font-weight: bold;
         font-family: "楷体";
-        margin-bottom: 30px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 20px;
+
     }
     .show_container{
-        width: 1200px;
+        width: 84%;
         margin: 0 auto;
+        overflow: hidden;
     }
     .show_box{
-        width: 228px;
-        height: 320px;
+        width: 18%;
+        height:0;
+        padding-bottom:25%;
         float: left;
-        margin-left: 10px;
+        margin-left: 0.9%;
+        margin-right: 0.9%;
         margin-bottom: 10px;
         position: relative;
         overflow: hidden;
@@ -64,12 +68,10 @@
         border: 1px solid hotpink;
     }
     .show_box .img{
-        width: 228px;
-        height: 228px;
+        width: 100%;
+        height:0;
+        padding-bottom:100%;
         overflow: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
     }
     .show_box .img img{
         width: 100%;
@@ -83,20 +85,23 @@
         color: grey;
     }
     .show_box span:nth-of-type(1){
-        position: absolute;
-        width: 228px;
+        display: block;
+        width: 100%;
+        margin: 10px auto 0;
         text-align: center;
-        top: 250px;
-        left: 0;
     }
     .show_box .commit{
-        position: absolute;
-        top: 280px;
-        left: 25px;
+        display: block;
+        width: 100%;
+        margin: 10px auto 0;
+        text-align: center;
     }
-    .show_box .look{
-        position: absolute;
-        top: 280px;
-        right: 25px;
+
+    @media screen and (max-width: 768px) {
+        .show_box{
+            width: 46%;
+            height:0;
+            padding-bottom:60%;
+        }
     }
 </style>

@@ -33,28 +33,30 @@
         list-style: none;
     }
     .commentlist_item{
-        width: 1503px;
+        width: 100%;
         margin: 0 auto;
     }
     h1{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        width: 100%;
+        margin: 30px auto;
         color: hotpink;
-        margin-left: -5px;
+        text-align: center;
         font-size: 28px;
         font-weight: bold;
         font-family: "楷体";
     }
     .comment_container{
-        width: 1200px;
+        width: 90%;
+        overflow: hidden;
         margin: 0 auto;
     }
     .comment_container .comment_box{
-        width: 568px;
+        width: 46%;
         border: 1px solid #c7c7c7;
         height: 110px;
         float: left;
         margin-right: 10px;
+        margin-left: 10px;
         margin-bottom: 10px;
         position: relative;
         padding: 10px;
@@ -74,24 +76,26 @@
         color: hotpink;
     }
     .comment_container .comment_box p:nth-of-type(2){
-         width: 100%;
-         text-align: left;
+        width: 100%;
+        text-align: left;
         color: grey;
         font-size: 14px;
      }
     .comment_container .comment_box p:nth-of-type(3){
-        position: absolute;
-        left: 10px;
-        bottom: 10px;
         color: grey;
     }
     .comment_container .comment_box p:nth-of-type(3) span{
         color: hotpink;
     }
     .comment_container .comment_box p:nth-of-type(4){
-         position: absolute;
-         left: 110px;
-         bottom: 10px;
         color: grey;
+        margin-left: 100px;
+        margin-top: -20px;
      }
+
+    @media screen and (max-width: 768px) {
+        .comment_container .comment_box{
+            width: 90%;
+        }
+    }
 </style>

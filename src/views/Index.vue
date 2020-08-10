@@ -1,11 +1,11 @@
 <template>
-    <div style="width: 1503px;margin: 0 auto" class="index_item">
+    <div style="width: 100%;margin: 0 auto" class="index_item">
         <Banner :banners="banners"/>
         <Item/>
         <Header/>
         <Photo :photos="photos"/>
         <Show :shows="shows"/>
-        <Title :titles="titles"/>
+        <Titles :titles="titles"/>
     </div>
 </template>
 
@@ -14,7 +14,7 @@
     import Header from '../components/index/Header'
     import Photo from '../components/index/Photo'
     import Show from '../components/index/Show'
-    import Title from '../components/index/Title'
+    import Titles from '../components/index/Titles'
     import Item from '../components/index/Item'
 
     export default {
@@ -24,7 +24,7 @@
             Header,
             Photo,
             Show,
-            Title,
+            Titles,
             Item,
         },
         data(){

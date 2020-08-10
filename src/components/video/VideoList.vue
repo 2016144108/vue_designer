@@ -30,27 +30,31 @@
         list-style: none;
     }
     .videolist_item{
-        width: 1503px;
+        width: 100%;
         margin: 0 auto;
     }
     h1{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        width: 100%;
+        text-align: center;
+        margin: 30px auto;
         color: hotpink;
         font-size: 28px;
         font-weight: bold;
         font-family: "楷体";
     }
     .video_container{
-        width: 1200px;
+        width: 90%;
         margin: 0 auto;
+        overflow: hidden;
     }
     .video_container .video_box{
-        width: 588px;
+        width: 48%;
         border: 1px solid #c7c7c7;
-        height: 390px;
+        height:0;
+        padding-bottom:32%;
         float: left;
         margin-right: 10px;
+        margin-left: 10px;
         margin-bottom: 10px;
         cursor: pointer;
     }
@@ -58,7 +62,7 @@
         width: 100%;
     }
     .video_container .video_box p{
-        width: 564px;
+        width: 96%;
         text-align: left;
         margin-top: 5px;
         font-size: 14px;
@@ -68,5 +72,13 @@
     .video_container .video_box p:hover{
         color: hotpink;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+        .video_container .video_box{
+            width: 96%;
+            height:0;
+            padding-bottom:63%;
+        }
     }
 </style>

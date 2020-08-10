@@ -60,11 +60,16 @@
         list-style: none;
     }
     .banner_container{
-        width: 1503px;
-        height: 600px;
+        width: 100%;
+        height:0;
+        padding-bottom:40%;
         overflow: hidden;
-        position: relative;
-        margin-top: -60px;
+        margin-top: -10px;
+    }
+    .images{
+        height:0;
+        padding-bottom:40%;
+        overflow: hidden;
     }
     .images li{
         float: left;
@@ -85,8 +90,19 @@
         opacity: 0.8;
     }
     .dots{
-        position: absolute;
-        right: 45%;
-        bottom: 20px;
+        width: 200px;
+        margin-top: -100px;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+    }
+
+    @media screen and (max-width: 768px) {
+        .banner_container{
+            height: 150px;
+            margin-top: -60px;
+        }
+        .dots{
+            display: none;
+        }
     }
 </style>

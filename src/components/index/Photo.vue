@@ -33,26 +33,30 @@
         list-style: none;
     }
     .photo_item{
-        width: 1503px;
+        width: 100%;
         margin: 0 auto;
-        height: 950px;
     }
     h1{
         color: hotpink;
         font-size: 28px;
         font-weight: bold;
         font-family: "楷体";
-        margin-bottom: 30px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 20px;
     }
     .photo_cantainer{
-        width: 1200px;
+        width: 84%;
+        overflow: hidden;
         margin: 0 auto;
     }
     .photo_box{
-        width: 278px;
-        height: 400px;
+        width: 23%;
+        height:0;
+        padding-bottom:28%;
         float: left;
-        margin-left: 20px;
+        margin-right: 0.9%;
+        margin-left: 0.9%;
         margin-bottom: 20px;
         position: relative;
         overflow: hidden;
@@ -63,12 +67,10 @@
         border: 1px solid hotpink;
     }
     .photo_box .img{
-        width: 280px;
-        height: 280px;
+        width: 100%;
+        height:0;
+        padding-bottom:90%;
         overflow: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
     }
     .photo_box .img img{
         width: 100%;
@@ -78,22 +80,28 @@
         transform: scale(1.2,1.2);
     }
     .photo_box .name{
-        width: 280px;
+        display: block;
+        width: 100%;
         text-align: center;
-        position: absolute;
-        top: 310px;
-        left: 0;
+        margin: 10px auto 0;
         color: grey;
     }
     .photo_box .content{
-        width: 280px;
+        width: 100%;
+        display: block;
         text-align: center;
-        position: absolute;
-        top: 340px;
-        left: 0;
+        margin: 10px auto 0;
         color: grey;
     }
     .photo_box span:hover{
         color: hotpink;
+    }
+
+    @media screen and (max-width: 768px) {
+        .photo_box{
+            width: 46%;
+            height:0;
+            padding-bottom:56%;
+        }
     }
 </style>

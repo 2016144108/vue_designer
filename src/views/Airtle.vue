@@ -7,7 +7,7 @@
 
 <script>
     import Header from "../components/common/Header"
-    import Title from '../components/index/Title'
+    import Title from '../components/index/Titles'
 
     export default {
         name: "airtle",

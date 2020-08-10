@@ -34,18 +34,20 @@
         list-style: none;
     }
     .style_item{
-        width: 1503px;
+        width: 100%;
         margin: 30px auto 20px;
         height: 40px;
     }
     ul{
-        width: 600px;
-        margin-left: 550px;
+        width: 60%;
+        margin-left: 35.5%;
+        overflow: hidden;
     }
     ul li{
         float: left;
         margin-right: 50px;
         font-size: 20px;
+        text-align: center;
         display: block;
         width: 100px;
         padding: 3px;
@@ -63,5 +65,22 @@
     }
     ul li.active:hover{
         color: white;
+    }
+
+
+    @media screen and (max-width: 768px) {
+        ul{
+            width: 100%;
+            margin-left: 17%;
+            overflow: hidden;
+        }
+        ul li{
+            float: left;
+            margin-right: 10px;
+            font-size: 20px;
+            display: block;
+            width: 80px;
+            padding: 3px;
+        }
     }
 </style>

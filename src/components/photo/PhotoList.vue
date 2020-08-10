@@ -32,18 +32,21 @@
         list-style: none;
     }
     .photo_item{
-        width: 1503px;
+        width: 100%;
         margin: 0 auto;
     }
     .photo_cantainer{
-        width: 1200px;
+        width: 90%;
+        overflow: hidden;
         margin: 0 auto;
     }
     .photo_box{
-        width: 278px;
-        height: 480px;
+        width: 23%;
+        height:0;
+        padding-bottom:40%;
         float: left;
-        margin-left: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         margin-bottom: 20px;
         position: relative;
         overflow: hidden;
@@ -54,12 +57,10 @@
         border: 1px solid hotpink;
     }
     .photo_box .img{
-        width: 278px;
-        height: 400px;
+        width: 100%;
+        height:0;
+        padding-bottom:150%;
         overflow: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
     }
     .photo_box .img img{
         width: 100%;
@@ -69,22 +70,28 @@
         transform: scale(1.2,1.2);
     }
     .photo_box .name{
-        width: 280px;
+        display: block;
+        width: 100%;
         text-align: center;
-        position: absolute;
-        top: 410px;
-        left: 0;
+        margin: 10px auto 0;
         color: grey;
     }
     .photo_box .content{
-        width: 280px;
+        display: block;
+        width: 100%;
         text-align: center;
-        position: absolute;
-        top: 440px;
-        left: 0;
+        margin: 5px auto 0;
         color: grey;
     }
     .photo_box span:hover{
         color: hotpink;
+    }
+
+    @media screen and (max-width: 768px) {
+        .photo_box{
+            width: 43%;
+            height:0;
+            padding-bottom:75%;
+        }
     }
 </style>

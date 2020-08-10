@@ -56,12 +56,12 @@
         list-style: none;
     }
     .header_item{
-        width: 1502px;
+        width: 100%;
         height: 70px;
-        margin-top: -60px;
+        margin-top: -10px;
     }
     .header_box{
-        width: 1503px;
+        width: 100%;
         height: 70px;
         background-color: white;
         position: relative;
@@ -71,7 +71,7 @@
         height: 70px;
         position: absolute;
         top: 0;
-        left: 100px;
+        left: 10%;
     }
     .header_box .logo h1{
          height: 70px;
@@ -79,7 +79,7 @@
          line-height: 70px;
          position: absolute;
          top: 0;
-         left: 100px;
+         left: 0px;
         color: hotpink;
         font-weight:normal;
         font-family: "楷体";
@@ -89,7 +89,7 @@
     .header_box .header_list{
         position: absolute;
         top: 0;
-        left: 400px;
+        left: 20%;
         height: 70px;
         width: 480px;
     }
@@ -119,7 +119,7 @@
         width: 210px;
         position: absolute;
         top: 0;
-        right: 180px;
+        right: 10%;
     }
     .header_box .header_text span{
         float: left;
@@ -140,4 +140,27 @@
         margin-right: 50px;
     }
 
+    @media screen and (max-width: 768px) {
+        .header_box .header_list{
+            display: none;
+        }
+        .header_box{
+            box-shadow: none;
+        }
+        .header_box .header_text{
+            display: none;
+        }
+        .header_box .logo{
+            width: 100%;
+            display: block;
+            position: unset;
+            margin: 0 auto;
+            background-color: hotpink;
+        }
+        .header_box .logo h1{
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+    }
 </style>

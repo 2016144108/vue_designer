@@ -46,20 +46,19 @@
         list-style: none;
     }
     .item_item{
-        width: 1503px;
-        height: 600px;
+        width: 100%;
         overflow: hidden;
         position: relative;
         margin-top: -600px;
+        height:0;
+        padding-bottom:40%;
     }
      .logo a{
          text-decoration: none;
     }
     .item_item .logo{
-        position: absolute;
-        top: 30px;
-        left: 30px;
         cursor: pointer;
+        margin: 50px 0 0 50px;
     }
     .logo p:nth-of-type(1){
         font-size: 65px;
@@ -73,9 +72,7 @@
         margin-left: 22px;
     }
     .item_item .form_item{
-        position: absolute;
-        top: 30px;
-        right: 50px;
+        margin: -50px 0 20% 80%;
     }
     .form_item input{
         width: 240px;
@@ -85,7 +82,9 @@
         padding-left: 10px;
     }
     .item_item .button_item{
-        margin:  500px auto 0;
+        width: 300px;
+        margin-left: 50%;
+        transform: translate(-50%,0);
     }
     .button_item button:nth-of-type(1){
         width: 120px;
@@ -107,5 +106,25 @@
         background-color: hotpink;
         border: 1px solid hotpink;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+        .item_item .form_item,.button_item{
+            display: none;
+        }
+        .item_item .logo{
+            width: 100%;
+            margin: 50% 0 0 0;
+        }
+        .logo p{
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .item_item{
+            width: 100%;
+            height:0;
+            padding-bottom:70%;
+        }
     }
 </style>

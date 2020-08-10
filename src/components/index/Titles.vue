@@ -14,7 +14,7 @@
 
 <script>
     export default {
-        name: "title",
+        name: "titles",
         props: {
             titles: {
                 type: Array,
@@ -32,28 +32,31 @@
         list-style: none;
     }
     .title_item{
-        width: 1503px;
+        width: 100%;
         margin: 0 auto;
-        height: 900px;
     }
     h1{
         color: hotpink;
         font-size: 28px;
         font-weight: bold;
         font-family: "楷体";
-        margin-bottom: 30px;
+        width: 100%;
+        text-align: center;
+        margin: 30px auto;
     }
     .title_cantainer{
-        width: 1200px;
+        width: 84%;
+        overflow: hidden;
         margin: 0 auto;
     }
     .title_box{
-        width: 588px;
-        height: 260px;
+        width: 48%;
+        height:0;
+        padding-bottom:20%;
         float: left;
-        margin-left: 10px;
+        margin-left: 0.9%;
+        margin-right: 0.9%;
         margin-bottom: 10px;
-        position: relative;
         overflow: hidden;
         border: 1px solid #c7c7c7;
     }
@@ -62,28 +65,35 @@
         border: 1px solid hotpink;
     }
     .title_box .img{
-        width: 588px;
-        height: 200px;
+        width: 100%;
+        height:0;
+        padding-bottom:32%;
         overflow: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
     }
     .title_box .img img{
         width: 100%;
     }
     .title_box .content{
-        width: 568px;
+        display: block;
+        width: 100%;
         text-align: left;
-        position: absolute;
-        top: 210px;
-        left: 0;
-        color: grey;
-        padding: 0 10px;
+        margin-top: 5px;
         font-size: 14px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: grey;
     }
     .title_box .content:hover{
         color: hotpink;
         text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px) {
+        .title_box{
+            width: 98%;
+            height:0;
+            padding-bottom:40%;
+        }
     }
 </style>

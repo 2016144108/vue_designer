@@ -45,24 +45,27 @@
         list-style: none;
     }
     .a_item{
-        width: 1503px;
+        width: 100%;
         margin: 0 auto;
     }
     h1{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        width: 100%;
+        text-align: center;
+        margin: 30px auto;
         color: hotpink;
         font-size: 28px;
         font-weight: bold;
         font-family: "楷体";
     }
     .activity_container{
-        width: 1200px;
+        width: 90%;
         margin: 0 auto;
+        overflow: hidden;
     }
     .activity_box{
-        width: 1198px;
-        height: 450px;
+        width: 99%;
+        height:0;
+        padding-bottom:36%;
         border: 1px solid #c7c7c7;
         position: relative;
         overflow: hidden;
@@ -73,10 +76,8 @@
         border: 1px solid hotpink;
     }
     .activity_box .img{
-        position: absolute;
-        top:0;
-        left: 0;
-        height: 310px;
+        height:0;
+        padding-bottom:25%;
         overflow: hidden;
         width: 100%;
     }
@@ -84,39 +85,36 @@
         width: 100%;
     }
     .activity_box p:nth-of-type(1){
-        position: absolute;
-        top: 320px;
-        left: 30px;
+        text-align: center;
+        width: 80px;
         font-size: 14px;
         color: hotpink;
+        margin-top: 20px;
+        margin-left: 30px;
         border: 1px solid hotpink;
         border-radius: 2px;
         padding: 2px;
     }
     .activity_box p:nth-of-type(2){
-        position: absolute;
-        top: 320px;
-        left: 150px;
+        margin-top: -26px;
+        margin-left: 150px;
         font-weight: bold;
         font-size: 20px;
     }
     .activity_box p:nth-of-type(3){
-        position: absolute;
-        top: 350px;
-        left: 30px;
+        margin-top: 10px;
+        margin-left: 30px;
         font-size: 14px;
         color: grey;
     }
     .activity_box p:nth-of-type(4){
-        position: absolute;
-        top: 380px;
-        left: 30px;
+        margin-top: 10px;
+        margin-left: 30px;
         font-size: 18px;
     }
     .activity_box p:nth-of-type(5){
-        position: absolute;
-        top: 410px;
-        left: 30px;
+        margin-top: 10px;
+        margin-left: 30px;
         width: 80px;
         text-align: center;
         height:26px;
@@ -129,9 +127,6 @@
         cursor: pointer;
     }
     .activity_box p:nth-of-type(5).go{
-        position: absolute;
-        top: 410px;
-        left: 30px;
         width: 80px;
         text-align: center;
         height:26px;
@@ -148,12 +143,24 @@
         background-color: rgba(255, 105, 180, 0.58);
     }
     .activity_box .imgbox{
-        position: absolute;
-        right: 30px;
-        bottom: 50px;
+        margin-top:-50px;
+        margin-left: 85%;
         width: 120px;
     }
     .activity_box .imgbox img{
         width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+        .activity_box{
+            width: 98%;
+            height:0;
+            padding-bottom:56%;
+        }
+        .activity_box .imgbox{
+            margin-top:-50px;
+            margin-left: 75%;
+            width: 120px;
+        }
     }
 </style>
