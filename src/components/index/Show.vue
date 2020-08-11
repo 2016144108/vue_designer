@@ -53,11 +53,13 @@
     }
     .show_box{
         width: 18%;
-        height:0;
-        padding-bottom:25%;
+        /*height:0;
+        padding-bottom:25%;*/
         float: left;
-        margin-left: 0.9%;
-        margin-right: 0.9%;
+        box-sizing: border-box;
+        padding-bottom: 10px;
+        margin-left:1%;
+        margin-right: 1%;
         margin-bottom: 10px;
         position: relative;
         overflow: hidden;
@@ -93,15 +95,19 @@
     .show_box .commit{
         display: block;
         width: 100%;
-        margin: 10px auto 0;
+        margin: 5px auto 0;
         text-align: center;
     }
 
     @media screen and (max-width: 768px) {
         .show_box{
-            width: 46%;
-            height:0;
-            padding-bottom:60%;
+            width: 48%;
+        }
+        .show_box span{
+            font-size: 12px;
+        }
+        .show_container{
+            width:90%;
         }
     }
 </style>

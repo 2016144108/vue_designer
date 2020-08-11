@@ -42,13 +42,14 @@
     }
     .photo_box{
         width: 23%;
-        height:0;
-        padding-bottom:40%;
+        padding-bottom: 10px;
+        /*height:0;
+        padding-bottom:40%;*/
         float: left;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 1%;
+        margin-right: 1%;
+        box-sizing: border-box;
         margin-bottom: 20px;
-        position: relative;
         overflow: hidden;
         border: 1px solid #c7c7c7;
     }
@@ -80,7 +81,7 @@
         display: block;
         width: 100%;
         text-align: center;
-        margin: 5px auto 0;
+        margin: 0 auto 0;
         color: grey;
     }
     .photo_box span:hover{
@@ -89,9 +90,10 @@
 
     @media screen and (max-width: 768px) {
         .photo_box{
-            width: 43%;
-            height:0;
-            padding-bottom:75%;
+            width: 48%;
+        }
+        .photo_box span{
+            font-size: 12px;
         }
     }
 </style>

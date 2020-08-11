@@ -52,14 +52,16 @@
     }
     .photo_box{
         width: 23%;
-        height:0;
-        padding-bottom:28%;
+        /*height:0;
+        padding-bottom:28%;*/
+        box-sizing: border-box;
         float: left;
-        margin-right: 0.9%;
-        margin-left: 0.9%;
+        margin-right: 1%;
+        margin-left: 1%;
         margin-bottom: 20px;
         position: relative;
         overflow: hidden;
+        padding-bottom: 10px;
         border: 1px solid #c7c7c7;
     }
     .photo_box:hover{
@@ -90,7 +92,7 @@
         width: 100%;
         display: block;
         text-align: center;
-        margin: 10px auto 0;
+        margin: 5px auto 0;
         color: grey;
     }
     .photo_box span:hover{
@@ -99,9 +101,13 @@
 
     @media screen and (max-width: 768px) {
         .photo_box{
-            width: 46%;
-            height:0;
-            padding-bottom:56%;
+            width: 48%;
+        }
+        .photo_box span{
+            font-size: 12px;
+        }
+        .photo_cantainer{
+            width: 90%;
         }
     }
 </style>

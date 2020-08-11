@@ -48,4 +48,31 @@
     .header_item ul li a:hover{
         color: hotpink;
     }
+
+    @media screen and (max-width: 768px) {
+        .header_item{
+            width: 100%;
+            height: 60px;
+        }
+        .header_item ul{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .header_item ul li{
+            float: left;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+        }
+        .header_item ul li a{
+            text-decoration: none;
+            color: grey;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 20px;
+            font-family: "楷体";
+        }
+    }
 </style>

@@ -39,24 +39,21 @@
         height: 40px;
     }
     ul{
-        width: 60%;
-        margin-left: 35.5%;
+        width: 360px;
+        margin: 0 auto;
         overflow: hidden;
     }
     ul li{
         float: left;
-        margin-right: 50px;
         font-size: 20px;
         text-align: center;
         display: block;
-        width: 100px;
+        box-sizing: border-box;
+        width: 120px;
         padding: 3px;
     }
     ul li:hover{
         background-color: hotpink;
-        float: left;
-        margin-right: 50px;
-        font-size: 20px;
         cursor: pointer;
         color: white;
     }
@@ -70,16 +67,17 @@
 
     @media screen and (max-width: 768px) {
         ul{
-            width: 100%;
-            margin-left: 17%;
+            width: 270px;
+            margin: 0 auto;
             overflow: hidden;
         }
         ul li{
             float: left;
-            margin-right: 10px;
             font-size: 20px;
+            text-align: center;
             display: block;
-            width: 80px;
+            box-sizing: border-box;
+            width: 90px;
             padding: 3px;
         }
     }

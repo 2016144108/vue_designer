@@ -86,7 +86,7 @@
         font-size: 14px;
         height: 24px;
         line-height: 24px;
-        margin-left: 10px;
+        margin-left: 24px;
     }
     .login_item .form_item input{
         width: 200px;
@@ -98,9 +98,9 @@
         margin-bottom: 3px;
     }
     .login_item .form_item button{
-        width: 240px;
+        width: 248px;
         height: 36px;
-        margin-left: 10px;
+        margin-left: 24px;
         background-color: hotpink;
         color: white;
         border: 1px solid hotpink;

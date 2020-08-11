@@ -50,11 +50,13 @@
     .video_container .video_box{
         width: 48%;
         border: 1px solid #c7c7c7;
-        height:0;
-        padding-bottom:32%;
+        padding-bottom: 10px;
+        /*height:0;
+        padding-bottom:32%;*/
         float: left;
-        margin-right: 10px;
-        margin-left: 10px;
+        box-sizing: border-box;
+        margin-right: 1%;
+        margin-left: 1%;
         margin-bottom: 10px;
         cursor: pointer;
     }
@@ -76,9 +78,10 @@
 
     @media screen and (max-width: 768px) {
         .video_container .video_box{
-            width: 96%;
-            height:0;
-            padding-bottom:63%;
+            width: 98%;
+        }
+        .video_container .video_box p{
+            font-size: 12px;
         }
     }
 </style>

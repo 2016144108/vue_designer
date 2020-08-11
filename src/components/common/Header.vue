@@ -145,22 +145,24 @@
             display: none;
         }
         .header_box{
-            box-shadow: none;
+            background-color: hotpink;
         }
         .header_box .header_text{
             display: none;
         }
         .header_box .logo{
             width: 100%;
-            display: block;
-            position: unset;
-            margin: 0 auto;
-            background-color: hotpink;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
         .header_box .logo h1{
             width: 100%;
             text-align: center;
             color: white;
+            height: 100%;
+            line-height: 78px;
         }
     }
 </style>

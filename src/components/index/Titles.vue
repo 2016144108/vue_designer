@@ -51,13 +51,15 @@
     }
     .title_box{
         width: 48%;
-        height:0;
-        padding-bottom:20%;
+        /*height:0;
+        padding-bottom:20%;*/
         float: left;
-        margin-left: 0.9%;
-        margin-right: 0.9%;
+        margin-left: 1%;
+        margin-right: 1%;
+        box-sizing: border-box;
         margin-bottom: 10px;
         overflow: hidden;
+        padding-bottom: 10px;
         border: 1px solid #c7c7c7;
     }
     .title_box:hover{
@@ -81,7 +83,6 @@
         font-size: 14px;
         padding: 0 10px;
         box-sizing: border-box;
-        font-size: 14px;
         color: grey;
     }
     .title_box .content:hover{
@@ -92,8 +93,12 @@
     @media screen and (max-width: 768px) {
         .title_box{
             width: 98%;
-            height:0;
-            padding-bottom:40%;
+        }
+        .title_box .content{
+            font-size: 12px;
+        }
+        .title_cantainer{
+            width: 90%;
         }
     }
 </style>

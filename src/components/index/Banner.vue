@@ -64,7 +64,6 @@
         height:0;
         padding-bottom:40%;
         overflow: hidden;
-        margin-top: -10px;
     }
     .images{
         height:0;
@@ -91,16 +90,12 @@
     }
     .dots{
         width: 200px;
-        margin-top: -100px;
+        margin-top: -50px;
         margin-left: 50%;
         transform: translate(-50%,0);
     }
 
     @media screen and (max-width: 768px) {
-        .banner_container{
-            height: 150px;
-            margin-top: -60px;
-        }
         .dots{
             display: none;
         }

@@ -11,7 +11,7 @@
                 <div class="error" :style="{visibility: error.loginPwd? 'visible' : 'hidden',}">{{error.loginPwd}}</div>
             </div>
             <div class="form_item" style="margin-bottom: 10px;">
-                <div class="input"><label>重复密码：</label><input @input="isSame" v-model="userInfo.pwdAgain" type="password" autocomplete="new_password"/></div>
+                <div class="input"><label>重密：</label><input @input="isSame" v-model="userInfo.pwdAgain" type="password" autocomplete="new_password"/></div>
                 <div class="error" :style="{visibility: error.pwdAgain? 'visible' : 'hidden',}">{{error.pwdAgain}}</div>
             </div>
             <div class="form_item" style="margin-bottom: 10px;">
@@ -93,11 +93,12 @@
 
 <style scoped>
     .reg_item{
-        width: 350px;
+        width: 300px;
         height: 350px;
         background-color: white;
         border: 1px solid #ababab;
         padding: 10px;
+        overflow: hidden;
     }
     .reg_item .form_item h1{
         font-size: 30px;
@@ -111,14 +112,10 @@
         font-size: 14px;
         height: 24px;
         line-height: 24px;
-        margin-left: -10px;
-    }
-    .reg_item .form_item:nth-of-type(4) label{
-        font-size: 14px;
-        margin-left: -36px;
+        margin-left: 10px;
     }
     .reg_item .form_item input{
-        width: 240px;
+        width: 220px;
         height: 24px;
         border: 1px solid grey;
         border-radius: 2px;
@@ -127,9 +124,9 @@
         margin-bottom: 3px;
     }
     .reg_item .form_item button{
-        width: 290px;
+        width: 270px;
         height: 36px;
-        margin-left: -10px;
+        margin-left: 10px;
         background-color: hotpink;
         color: white;
         border: 1px solid hotpink;

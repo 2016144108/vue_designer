@@ -47,23 +47,23 @@
     }
     .item_item{
         width: 100%;
-        overflow: hidden;
-        position: relative;
-        margin-top: -600px;
         height:0;
         padding-bottom:40%;
+        overflow: hidden;
+        margin-top: -40%;
     }
      .logo a{
          text-decoration: none;
     }
     .item_item .logo{
         cursor: pointer;
-        margin: 50px 0 0 50px;
+        margin: 30px 0 0 30px;
     }
     .logo p:nth-of-type(1){
         font-size: 65px;
         font-family: "楷体";
         color: white;
+        margin-left: 16px;
     }
     .logo p:nth-of-type(2){
         font-size: 16px;
@@ -72,7 +72,7 @@
         margin-left: 22px;
     }
     .item_item .form_item{
-        margin: -50px 0 20% 80%;
+        margin: -60px 0 20% 80%;
     }
     .form_item input{
         width: 240px;
@@ -114,17 +114,19 @@
         }
         .item_item .logo{
             width: 100%;
-            margin: 50% 0 0 0;
+            margin:8% 0 0 0;
         }
         .logo p{
             width: 100%;
             text-align: center;
             margin: 0 auto;
         }
-        .item_item{
-            width: 100%;
-            height:0;
-            padding-bottom:70%;
+        .logo p:nth-of-type(1){
+            font-size: 50px;
+        }
+        .logo p:nth-of-type(2) {
+            font-size: 12px;
+            letter-spacing: 10px;
         }
     }
 </style>

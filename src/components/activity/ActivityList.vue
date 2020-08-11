@@ -58,14 +58,16 @@
         font-family: "楷体";
     }
     .activity_container{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         overflow: hidden;
     }
     .activity_box{
-        width: 99%;
-        height:0;
-        padding-bottom:36%;
+        width: 100%;
+        /*height:0;
+        padding-bottom:36%;*/
+        box-sizing: border-box;
+        padding-bottom: 10px;
         border: 1px solid #c7c7c7;
         position: relative;
         overflow: hidden;
@@ -153,13 +155,51 @@
 
     @media screen and (max-width: 768px) {
         .activity_box{
-            width: 98%;
-            height:0;
-            padding-bottom:56%;
+            width: 100%;
         }
         .activity_box .imgbox{
             margin-top:-50px;
             margin-left: 75%;
+            width: 120px;
+        }
+        .activity_box p:nth-of-type(1){
+            display: none;
+        }
+        .activity_box p:nth-of-type(2){
+            display: none;
+        }
+        .activity_box p:nth-of-type(3){
+            margin-left: 10px;
+            font-size: 12px;
+        }
+        .activity_box p:nth-of-type(4){
+            margin-left: 10px;
+            font-size: 14px;
+        }
+        .activity_box p:nth-of-type(5){
+            margin-left: 10px;
+            width: 60px;
+            text-align: center;
+            height:20px;
+            line-height: 20px;
+            font-size: 12px;
+            border-radius: 2px;
+        }
+        .activity_box p:nth-of-type(5).go{
+            margin-left: 10px;
+            width: 60px;
+            text-align: center;
+            height:20px;
+            line-height: 20px;
+            font-size: 12px;
+            border-radius: 2px;
+        }
+        .activity_box p:nth-of-type(5).go:hover{
+            background-color: rgba(255, 105, 180, 0.58);
+        }
+        .activity_box .imgbox{
+            margin-top:-50px;
+            margin-left: 60%;
             width: 120px;
         }
     }

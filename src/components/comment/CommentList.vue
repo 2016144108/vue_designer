@@ -46,20 +46,21 @@
         font-family: "楷体";
     }
     .comment_container{
-        width: 90%;
+        width: 100%;
         overflow: hidden;
         margin: 0 auto;
     }
     .comment_container .comment_box{
-        width: 46%;
+        width: 48%;
         border: 1px solid #c7c7c7;
         height: 110px;
         float: left;
-        margin-right: 10px;
-        margin-left: 10px;
+        margin-right: 1%;
+        margin-left: 1%;
+        box-sizing: border-box;
         margin-bottom: 10px;
         position: relative;
-        padding: 10px;
+        padding: 10px 10px 120px 10px;
     }
     .comment_box:hover{
         cursor: pointer;
@@ -95,7 +96,7 @@
 
     @media screen and (max-width: 768px) {
         .comment_container .comment_box{
-            width: 90%;
+            width: 98%;
         }
     }
 </style>
