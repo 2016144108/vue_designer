@@ -46,7 +46,7 @@
         font-family: "楷体";
     }
     .comment_container{
-        width: 100%;
+        width: 90%;
         overflow: hidden;
         margin: 0 auto;
     }

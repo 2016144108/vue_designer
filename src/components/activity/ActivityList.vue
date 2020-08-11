@@ -58,7 +58,7 @@
         font-family: "楷体";
     }
     .activity_container{
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
         overflow: hidden;
     }
